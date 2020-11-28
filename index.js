@@ -10,8 +10,8 @@ function show(selectedValue){
   selectContainer.value = selectedValue;
 }
 
-function check(){
-  const selectValue = selectContainer.value;
+function check(event){
+  const selectValue = event.target.value;
 
   if(selectValue !== "none"){
     save(selectValue);
